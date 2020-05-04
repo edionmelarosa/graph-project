@@ -9,10 +9,4 @@
 * User can create/edit graph
 * User can download sample data
 * User can share graph using JS script
-
-## Todo
-* Create admin dashboard
-    * Create 
-    * 
-* 
  
