@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +13,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin');
 });
+
+Route::get('/dashboard', function () {
+    return view('admin');
+});
+
+Route::get('/profile', function () {
+    return view('admin');
+});
+
+Route::get('/graphs', function () {
+    return view('admin');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
